@@ -334,6 +334,7 @@ class Qwen2ForCausalLM(nn.Module, SupportsLoRA):
 
         super().__init__()
 
+        config.num_attention_heads = 8
         self.config = config
         self.lora_config = lora_config
 
